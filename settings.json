@@ -1,0 +1,37 @@
+{
+    "editor.tabCompletion": "on",
+    "editor.detectIndentation": false,
+    "editor.useTabStops": false,
+    "jupyter.askForKernelRestart": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "editor.mouseWheelZoom": true,
+    "jupyter.textOutputLimit": 200000,
+    "workbench.colorTheme": "Default Dark+",
+    "python.defaultInterpreterPath": "C:\\Tools\\Anaconda3\\envs\\datascience_clean\\python.exe",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.languageServer": "Pylance",
+    "files.autoSave": "onFocusChange",
+    "files.defaultLanguage": "${activeEditorLanguage}",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "remote.SSH.remotePlatform": {
+        "ec2-54-188-64-118.us-west-2.compute.amazonaws.com": "linux",
+        "production": "linux",
+        "185.193.67.131": "linux",
+        "odin": "linux",
+        "odin_docker": "linux"
+    },
+    "notebook.output.textLineLimit": 1000,
+    "remote.SSH.configFile": "C:\\Users\\SFede\\.ssh\\config",
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "editor.suggest.localityBonus": true,
+    "editor.suggest.shareSuggestSelections": true,
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "workbench.editor.enablePreview": false,
+    "window.zoomLevel": -1
+}

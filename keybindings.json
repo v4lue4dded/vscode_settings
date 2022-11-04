@@ -1,0 +1,100 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "shift+alt+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "-editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "-editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+y alt+up",
+        "command": "editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+up",
+        "command": "-editor.action.copyLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+y alt+down",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "f5",
+        "command": "extension.pgsql.runQuery",
+        "when": "editorTextFocus && editorLangId == 'sql'"
+    },
+    {
+        "key": "ctrl+m ctrl+r",
+        "command": "-extension.pgsql.runQuery",
+        "when": "editorTextFocus && editorLangId == 'sql'"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+c",
+        "command": "-editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+x",
+        "command": "editor.action.removeCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+u",
+        "command": "-editor.action.removeCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    { "key": "ctrl+up",                "command": "block-travel.jumpUp",     "when": "editorTextFocus" },
+    { "key": "ctrl+down",              "command": "block-travel.jumpDown",   "when": "editorTextFocus" },
+    { "key": "shift+ctrl+up",          "command": "block-travel.selectUp",   "when": "editorTextFocus" },
+    { "key": "shift+ctrl+down",        "command": "block-travel.selectDown", "when": "editorTextFocus" },
+
+    { "key": "shift+ctrl+l",        "command": "editor.action.transformToLowercase", "when": "editorTextFocus" },
+    {
+        "key": "shift+ctrl+u",
+        "command": "editor.action.transformToUppercase",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "cursorLineEnd"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "cursorLineStart"
+    },
+    {
+        "key": "ctrl+shift+alt+left",
+        "command": "cursorLineStartSelect"
+    },
+    {
+        "key": "ctrl+shift+alt+right",
+        "command": "cursorLineEndSelect"
+    },
+]
