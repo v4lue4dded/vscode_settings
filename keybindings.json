@@ -97,4 +97,14 @@
         "key": "ctrl+shift+alt+right",
         "command": "cursorLineEndSelect"
     },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "jupyter.debugFileInteractive",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "-editor.action.insertLineBefore",
+        "when": "editorTextFocus && !editorReadonly"
+    }
 ]
