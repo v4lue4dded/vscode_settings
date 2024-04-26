@@ -12,25 +12,42 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-
-
-    "invoke save_state": {
-        "prefix": "save_state",
-        "body": [
-            "from utils.debug_helper import save_state",
-            "save_state(local_vars=locals(), global_vars=globals(), exclude=['exit', 'quit', 'engine'])"
-        ],
-        "description": "Snippet for invoking save_state"
+    "if(main)": {
+        "prefix": ["ifmain"],
+        "body": ["if __name__ == '__main__':", "    ${1:pass}"],
+        "description": "Code snippet for a `if __name__ == '__main__': ...` block"
     },
-    "invoke load_state": {
-        "prefix": "load_state",
+    "Save Debug Snapshot": {
+        "prefix": "save_snapshot",
         "body": [
-            "from utils.debug_helper import load_state",
-            "global_vars, local_vars = load_state()",
+            "from debugsnap import save_snapshot",
+            "save_snapshot(local_vars=locals(), global_vars=globals())"
+        ],
+        "description": "Save the current state of local and global variables, excluding specific ones."
+    },
+    "Load Debug Snapshot": {
+        "prefix": "load_snapshot",
+        "body": [
+            "from debugsnap import load_snapshot",
+            "global_vars, local_vars = load_snapshot()",
             "globals().update(global_vars)",
             "locals().update(local_vars)"
         ],
-        "description": "Snippet for invoking load_state"
+        "description": "Load a saved state into the current global and local variables."
+    },
+    "Pandas Merge Template": {
+        "prefix": "merge",
+        "body": [
+            "merge(",
+            "    ${2:df2},",
+            "    how=\"left\",",
+            "    left_on=[\"${3:merge_id}\"],",
+            "    right_on=[\"${3:merge_id}\"],",
+            "    validate=\"m:1\"",
+            ")",
+            ""
+        ],
+        "description": "Template for merging two pandas DataFrames with validation"
     }
 }
 
